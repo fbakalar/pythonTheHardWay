@@ -9,7 +9,7 @@
 
 
 from sys import argv
-from os.path import exists
+from os.path import exists  #This returns True if a file exists
 
 # assert isinstance(argv, object)   #added by pycharm
 scripts, from_file, to_file = argv
@@ -24,7 +24,7 @@ indata = in_file.read()
 
 print "The input file is %d bytes long" % len(indata)
 
-print "Does the output file exist? %r" % exists(to_file)
+print "Does the output file exist? %r" % exists(to_file)   #use of the exists method we imported
 print "Ready, hit RETURN to continue, CTRL-C to abort."
 raw_input()
 
