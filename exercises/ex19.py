@@ -1,3 +1,17 @@
+###############################################################
+#
+#   Exercise 19 from Python The Hardway
+#
+#   Functions and Variables
+#   key learning point:
+#       the functions in your scripts are NOT the same as
+#       the functions in your variables
+#
+###############################################################
+
+# create the function cheese_and_crackers
+#  this function will take 2 parameters
+
 def cheese_and_crackers(cheese_count, boxes_of_crackers):
     print "You have %d cheeses"  % cheese_count
     print "you have %d boxes of crackers!" % boxes_of_crackers
@@ -5,14 +19,16 @@ def cheese_and_crackers(cheese_count, boxes_of_crackers):
     print "Get a blanket. \n"
 
 
-
+# print a line and call the function
 print "We can just give the function numbers directly:"
 cheese_and_crackers(20, 30)
 
+# assign variables...
 print "OR, we can use variables from our script:"
 amount_of_cheese = 10
 amount_of_crackers = 50
 
+# .... then call the function
 cheese_and_crackers(amount_of_cheese, amount_of_crackers)
 
 print "we can even do math inside too:"
