@@ -5,6 +5,8 @@
 #    Functions and Files
 #   C:\Users\berni\Documents\Source\pythonTheHardWay\exercises
 #
+#   just making some changes to test on MAC
+#
 #####################################################
 
 from sys import argv
