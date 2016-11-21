@@ -11,7 +11,17 @@ print 'You\'d need to know \'bout escapes with \\ that do \n newlines and \t tab
 
 print 'some good examples of escape sequences:'
 print 'https://linuxconfig.org/list-of-python-escape-sequence-characters-with-examples'
-
 print "\a" 
-print 
 print u"\u041b" u"\U000001a9"
+
+poem = """
+\tThe lovely world
+with logic so firmly planted
+cannot discern \n the needs of lovelynor comprehend passion from intuition
+and requires an explanation
+\n\t\twhere there is none
+"""
+
+print "--------------------"
+print poem
+print "--------------------"
