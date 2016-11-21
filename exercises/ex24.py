@@ -17,9 +17,10 @@ print u"\u041b" u"\U000001a9"
 poem = """
 \tThe lovely world
 with logic so firmly planted
-cannot discern \n the needs of lovelynor comprehend passion from intuition
+cannot discern \nthe needs of love
+nor comprehend passion from intuition
 and requires an explanation
-\n\t\twhere there is none
+\n\t\twhere there is none.
 """
 
 print "--------------------"
