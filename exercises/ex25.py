@@ -17,7 +17,7 @@ print break_words('something or something else') #example of break_words
 
 def sort_words(words):
     """Sorts the words."""
-    return sorted(words)
+    return sorted(words)   #can <words> be a string?
 
 print sort_words("just a random list of words")
 
@@ -37,11 +37,40 @@ def print_last_word(words):
     word = words.pop(-1)
     return word
 
-sentance = break_words('something or anything else')
-print sentance
-print print_last_word(sentance)
-print sentance
-print print_first_word(sentance)
-print sentance
-print print_second_word(sentance)
-print sentance
+sentence = break_words('something or anything else')
+print sentence
+print print_last_word(sentence)
+print sentence
+print print_first_word(sentence)
+print sentence
+print print_second_word(sentence)
+print sentence
+
+def sort_sentence(sentence):
+    """Takes in a full sentence and returns the sorted words."""
+    words = break_words(sentence)
+    return sort_words(words)
+
+print "sort_sentence"
+print sort_sentence(' this is the sentence to use')
+
+def print_first_and_last(sentence):
+    """Prints the first and last words of the sentence."""
+    words = break_words(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+def print_first_and_last_sorted(sentence):
+    """Sorts the words then prints the first and last one."""
+    words = sort_sentence(sentence)
+    print_first_word(words)
+    print_last_word(words)
+
+
+
+
+
+
+
+
+
