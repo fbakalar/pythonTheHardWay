@@ -1,9 +1,14 @@
-#------------------------------------------|
+#--------------------------------------------------------|
 #
 #  exercise 27
 #  this is all about Boolean Algebra
 #
-#------------------------------------------|
+# It is thus a formalism for describing 
+# logical relations in the same way that ordinary 
+#  algebra describes numeric relations.
+# http://www.math.uwaterloo.ca/~snburris/htdocs/MYWORKS/PREPRINTS/aboole.pdf 
+# http://www.gutenberg.org/files/15114/15114-pdf.pdf?session_id=143943e9be8ee78786193d94757956efda614713
+#--------------------------------------------------------|
 
 """
 NOT	         True?
