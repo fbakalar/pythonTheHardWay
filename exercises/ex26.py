@@ -4,6 +4,10 @@
 #      Find and correct mistakes in someone else's
 #      code
 #
+#     TODO: go back and review ex25
+#           compare to functions below
+#           make sure this can be run by importing ex25
+#
 #---------------------------------------------------------|
 
 def break_words(stuff):
