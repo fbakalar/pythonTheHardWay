@@ -44,11 +44,12 @@ not (True and True)	   | False
 not (False and True)   | True
 not (False and False)  | True
 
-!=	True?
-1 != 0	True
-1 != 1	False
-0 != 1	True
-0 != 0	False
+!=	     True?
+-------|-----
+1 != 0 | True
+1 != 1 | False
+0 != 1 | True
+0 != 0 | False
 
 ==	True?
 1 == 0	False
