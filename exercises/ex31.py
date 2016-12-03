@@ -1,6 +1,6 @@
 #---------------------------------------------|
 #
-#
+#  Exercise 31:  Making Decision
 #
 #
 #
@@ -18,4 +18,3 @@ if door == "1":
     print "1. Take the cake."
     print "2.  Scream at the bear."
 
-   
