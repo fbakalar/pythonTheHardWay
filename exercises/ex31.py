@@ -7,9 +7,8 @@
 #---------------------------------------------|
 
 
-print "You enter a dark room with two doors.  Do you go through door #1 or door #2?"
-
-
+print "You enter a dark room with three doors.  Do you go through door #1 or door #2?"
+print "or the mystery door...#3?"
 
 door = raw_input("> ")
 
@@ -40,6 +39,42 @@ elif door == "2":
 	else:
 		print "The insanity rots your eyes into a pool of muck.  Good job!"
 
+elif door =="3":
+    print "you've entered another demension. There are two open windows"
+    print "What do you do?"
+    print "L. climb through the left window"
+    print "R. climb through the right window"
+    print "C. leave the room and close the door"
+   
+    window = raw_input("> ")
+   
+    if window == "L" or window == "R":
+    	print " Now you are standing in a field of grass.  Good job!"
+    	print "there is a path that forks"
+    	print "to the left is a sign that reads 'easy'"
+    	print "to the right a sign that reads 'hard'"
+    	print "which way do you go"
+    	print "E. easy"
+    	print "H. hard"
+
+    	fork = raw_input("> ")
+
+    	if fork == "E":
+            print "Easy way eh?"
+            print "ok then - be that way..."
+        elif fork == "H":
+            print "Congratulations you are in for a world of pain and struggle"
+            print "but"
+            print "in the end - if you stay the course it will all be worth it"
+        else:
+            print "you are transported back to insanity"
+    else:
+        print "DUDE"
+        print "seriously?"
+        print " oh .......well....."
+
 else:
-	print "You stumble around and fall on a knofe and die.  Good job!"
+    print "BOOM!!!!!"
+    print "You stumble around and fall on a knofe and die.  Good job!"
+
 
