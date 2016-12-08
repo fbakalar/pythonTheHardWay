@@ -30,7 +30,8 @@ for i in change:
 elements = []
 
 # then use the range function to do 0 to 5 counts
-for i in range(0, 6):
+# 6 doesn't print b/c 'range' does not assign the last value
+for i in range(0, 6):    
 	print "Adding %d to the list." % i
 	# append is a function that lists undestand
 	elements.append(i)
@@ -42,5 +43,20 @@ for i in elements:
 elements = []
 elements = range(7 ,13)   #assinged a range to elements
 
+elements.insert(0,6)  #inserts 6 at the '0' position in the list
+
+print "print an index location"
+print elements.index(7)  #prints the index location of the number 7 in the list
+
+
+
 print "Now using range"
 print "Element was: %s" % elements[0]  #print first value in range
+
+
+
+
+
+
+
+
