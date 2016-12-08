@@ -38,3 +38,9 @@ for i in range(0, 6):
 # now we can print them out too
 for i in elements:
 	print "Element was: %d" % i
+
+elements = []
+elements = range(7 ,13)   #assinged a range to elements
+
+print "Now using range"
+print "Element was: %s" % elements[0]  #print first value in range
