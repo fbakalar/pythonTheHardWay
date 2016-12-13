@@ -11,7 +11,9 @@
 #    especially if there is a fixed or limited number 
 #     of things to loop over.
 #   
-#  
+#  todo:
+#   flow chart this and commit a picture to github
+#   add more comments and some description
 #  
 #
 #---------------------------------------------------------|
