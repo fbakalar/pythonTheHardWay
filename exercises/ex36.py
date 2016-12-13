@@ -17,6 +17,7 @@
 #---------------------------------------------------------|
 
 import sys
+import random
 
 
  # A tuple of strings giving the names of all modules that are 
@@ -34,20 +35,44 @@ print sys.version
 
 '''
 
-def door_one():
-   print 'put some stuff here'
+def door_one(variable):
+    print 'Door 1!'
+    print '************'
+    print 'the varaible is: %s' % variable
+
+#-------------------------------------
 
 def door_two():
    print 'put some other stuff here'
 
-def trap_door():
+
+#--------------------------------------
+
+def trap_door(variable):
     print 'what happens on the trap door'
+    num = variable 
+    print num
+    print 'and the mystery num is: %d' % num
+    if num <= 5:
+        print 'doh!'
+        print 'sorry - you loose'
+        print 'good bye'
+    else:
+        print 'OK lets try again'
+        print '----------------------'
+        start()
+
+#---------------------------------------
 
 def window_right():
     print 'window right'
 
+#----------------------------------------
+
 def window_left():
     print 'window left'
+
+#----------------------------------------
 
 def start():
     print 'the start'
@@ -62,8 +87,14 @@ def start():
         print 'OK'
         print 'you choose door number 1!'
         print ''
-        print "choice1 = 5"
+        anumber = random.randint(1, 10)
+        door_one(anumber)
     else:
-        print "choice1 != 5"
+        print 'wtf - that was not a choice!'
+        print 'now you get the mystery door'
+        anumber = random.randint(1, 10)
+        trap_door(anumber)
+
+#-----------------------------------------
 
 start()

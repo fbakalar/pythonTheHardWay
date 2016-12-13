@@ -3,7 +3,7 @@
 #  Exercise 35: Branches and Functions
 #
 #
-#
+#   Todo:  Add comments & flowchart 
 #   
 #  
 #  
@@ -14,7 +14,7 @@
 from sys import exit
 
 def gold_room():
-    print "This room is full of gold.   How much do yo take?"
+    print "This room is full of gold.   How much do you take?"
 
     choice = raw_input("> ")
 #if type(choice) == int:
