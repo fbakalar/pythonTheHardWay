@@ -1,7 +1,8 @@
 #----------------------------------------------------------|
 #
-#   Exercise 37:  Symbol Review
+#   Exercise 37:  Symbol Review - KEYWORDS
 #
+#   https://learnpythonthehardway.org/book/ex37.html
 #
 #   http://zetcode.com/lang/python/keywords/
 #    http://sandbox.mc.edu/~bennet/python/code/
