@@ -27,3 +27,9 @@ while len(stuff) != 10:
 
 
 print "there we go: ", stuff
+
+print stuff[1]
+print stuff[-1] # whoa! fancy - prints last item in list
+print stuff.pop() # pops and again prints last item 
+print ' '.join(stuff) # what? cool! no brackets and sana last item
+print '#'.join(stuff[3:5]) # super stellar!
