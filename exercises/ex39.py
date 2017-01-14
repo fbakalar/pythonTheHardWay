@@ -39,7 +39,7 @@ cities = {
 cities['NY'] = 'New York'
 cities['OR'] = 'Portland'
 
-# print some states
+# print some cities
 print '-' * 20
 print "Michigan has: ", cities[states['Michigan']]
 print "Florida has: ", cities[states['Florida']]
@@ -51,6 +51,33 @@ cities['MI'].append('Saginaw')  # add Saginaw
 print '-' * 20
 print 'updated Michigan'
 print "Michigan has: ", cities[states['Michigan']]
+
+
+# print some states
+print '-' * 20
+print "Mighigan's abbreviation is: ", states['Michigan']
+print "Florida's abbreviation is: ", states['Florida']
+
+# do it by using the state then cities dict
+print '-' * 20
+print "Michigan has: ", cities[states['Michigan']]
+print "Florida has: ", cities[states['Florida']]
+
+# print every state abbreviation
+print '-' * 20
+for state, abbrev in states.items():
+    print "%s is abbreviated %s" % (state, abbrev)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
