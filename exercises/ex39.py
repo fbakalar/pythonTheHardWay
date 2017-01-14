@@ -64,11 +64,26 @@ print "Michigan has: ", cities[states['Michigan']]
 print "Florida has: ", cities[states['Florida']]
 
 # print every state abbreviation
+# note variable names 'state' and 'abbrev' are 
+# arbitrary labels.  I could also use a & b
 print '-' * 20
 for state, abbrev in states.items():
     print "%s is abbreviated %s" % (state, abbrev)
 
+# print every city in state
+print '-' * 20
+for abbrev, city in cities.items():
+    print "%s has the city %s" % (abbrev, city)
 
+
+# now do both at the same time
+print '-'* 20
+for state, abbrev in states.items():
+    print "%s state is abbreviated %s and has city %s" % (
+        state, abbrev, cities[abbrev])
+
+print '-' * 20
+#
 
 
 
