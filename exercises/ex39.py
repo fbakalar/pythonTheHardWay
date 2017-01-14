@@ -30,13 +30,27 @@ states = {
 
 cities = {
     'CA': 'San Francisco',
-    'MI': 'Detroit',
+    'MI': ['Detroit'],  # in order to add values to one key
+    # you need to set the key = to a list rather than a string
     'FL': 'Jacksonville'
 }
 
+# add some more cities
+cities['NY'] = 'New York'
+cities['OR'] = 'Portland'
 
+# print some states
+print '-' * 20
+print "Michigan has: ", cities[states['Michigan']]
+print "Florida has: ", cities[states['Florida']]
     
+# add another city for Michigan
+#cities['MI'] = 'Saginaw'  # replaces Detroit
+cities['MI'].append('Saginaw')  # add Saginaw
 
+print '-' * 20
+print 'updated Michigan'
+print "Michigan has: ", cities[states['Michigan']]
 
 
 
