@@ -9,8 +9,12 @@
 #  so a <dict> becomes almost like a database for storing  
 #   and organizing data
 #   
-#  looks like a <dict> is a key value pair...
+#  looks like a <dict> is a store of key value pairs...
 #
+#  {}: pair of braces for empty dictionary
+#
+#  {1:2, 3:4}: comma-separated list of the form 
+#     key: value enclosed by braces
 #
 #
 #---------------------------------------------------------|
@@ -32,6 +36,8 @@ cities = {
     'CA': 'San Francisco',
     'MI': ['Detroit'],  # in order to add values to one key
     # you need to set the key = to a list rather than a string
+    # since I associated MI witha list [] I can add
+    # more cities later
     'FL': 'Jacksonville'
 }
 
@@ -46,7 +52,7 @@ print "Florida has: ", cities[states['Florida']]
     
 # add another city for Michigan
 #cities['MI'] = 'Saginaw'  # replaces Detroit
-cities['MI'].append('Saginaw')  # add Saginaw
+cities['MI'].append('Saginaw')  # add Saginaw to list by append
 
 print '-' * 20
 print 'updated Michigan'
@@ -73,7 +79,7 @@ for state, abbrev in states.items():
 # print every city in state
 print '-' * 20
 for abbrev, city in cities.items():
-    print "%s has the city %s" % (abbrev, city)
+    print "%s has the cities %s" % (abbrev, city)
 
 
 # now do both at the same time
