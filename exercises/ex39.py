@@ -11,7 +11,11 @@
 #   
 #  looks like a <dict> is a store of key value pairs...
 #
-#  {}: pair of braces for empty dictionary
+#  
+#  __________________________________________________
+#
+#   https://jeffknupp.com/blog/2015/08/30/python-dictionaries/
+#   {}: pair of braces for empty dictionary
 #
 #  {1:2, 3:4}: comma-separated list of the form 
 #     key: value enclosed by braces
@@ -89,7 +93,15 @@ for state, abbrev in states.items():
         state, abbrev, cities[abbrev])
 
 print '-' * 20
-#
+# safely get an abbreviation by state that might not be there 
+state = states.get('Texas')
+
+if not state:
+    print "sorry, no Texas."
+
+# get a city with a default value
+city = cities.get('TX', 'Does Not Exist')
+print "The city for the state 'TX' is: %s" % city
 
 
 
