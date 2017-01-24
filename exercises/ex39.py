@@ -21,6 +21,14 @@
 #     key: value enclosed by braces
 #
 #
+#  when to use a dict:
+#    When you have to take one value and "look up" another value
+#
+#
+#  when to use a list:
+#   Use a list for any sequence of things that need to be in order
+# 
+#
 #---------------------------------------------------------|
 
 
