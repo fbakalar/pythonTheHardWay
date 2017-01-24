@@ -14,6 +14,9 @@
 #
 #---------------------------------------------------------|
 
+import mystuff
+mystuff.apple()  #executes 'apples' function
+print mystuff.tangerine
 
 #  Modules are like Dictionaries
 
@@ -26,3 +29,4 @@ print mystuff['apple']  # prints the value for 'apples'
 #  3. You can then access functions or variables
 #     using the . (dot) operator
 
+#mystuff.apple()
